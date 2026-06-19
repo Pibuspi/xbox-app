@@ -32,13 +32,13 @@ function HomeScreen({ navigation }) {
       </View>
       <Text style={styles.title}>Meu App Xbox</Text>
       <Text style={styles.welcome}>
-        Bem-vindo ao universo Xbox!{'\n'}Explore jogos, servicos e muito mais.
+        Bem-vindo ao Xbox! Melhor plataforma de jogos do mundo!{'\n'}Explore jogos, servicos e muito mais.
       </Text>
       <TouchableOpacity
         style={styles.btnPrimary}
         onPress={() => navigation.navigate('Servicos')}
       >
-        <Text style={styles.btnText}>🎮  COMECAR</Text>
+        <Text style={styles.btnText}>COMEÇAR</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.btnSecondary}
@@ -59,7 +59,7 @@ function SobreScreen() {
       <Text style={styles.title}>Sobre o App</Text>
       <View style={styles.card}>
         <Text style={styles.cardLabel}>Desenvolvido por:</Text>
-        <Text style={styles.cardValue}>Pibuspi</Text>
+        <Text style={styles.cardValue}>Pietro Rainone Bruneli</Text>
       </View>
       <View style={styles.card}>
         <Text style={styles.cardLabel}>Curso:</Text>
@@ -110,8 +110,8 @@ function ServicosScreen() {
 function GaleriaScreen() {
   const galeria = [
     { emoji: '🏔️', legenda: 'Halo Infinite - Paisagem Epica' },
-    { emoji: '🌆', legenda: 'Forza Horizon - Cidade a Noite' },
-    { emoji: '⚔️', legenda: 'Gears 5 - Campo de Batalha' },
+    { emoji: '🌆', legenda: 'Forza Horizon 6 - Cidade a Noite' },
+    { emoji: '⚔️', legenda: 'Gears E-Day - Campo de Batalha' },
     { emoji: '🌌', legenda: 'Starfield - Exploracao Espacial' },
     { emoji: '🐉', legenda: 'Fable - Mundo Fantastico' },
     { emoji: '🏎️', legenda: 'Forza Motorsport - Pista de Corrida' },
@@ -123,7 +123,7 @@ function GaleriaScreen() {
         Nossa Galeria
       </Text>
       <Text style={[styles.textSecondary, { textAlign: 'center', marginBottom: 16 }]}>
-        Alguns momentos e imagens
+        Emojis representando jogos
       </Text>
       <View style={styles.galeriaGrid}>
         {galeria.map((item, i) => (
@@ -149,7 +149,7 @@ function ContatoScreen({ navigation }) {
         <Text style={styles.contatoIcon}>✉️</Text>
         <View>
           <Text style={styles.contatoLabel}>E-mail</Text>
-          <Text style={styles.contatoValor}>contato@meuapp.com</Text>
+          <Text style={styles.contatoValor}>xbox@hotmail.com</Text>
         </View>
       </View>
 
@@ -157,7 +157,7 @@ function ContatoScreen({ navigation }) {
         <Text style={styles.contatoIcon}>📞</Text>
         <View>
           <Text style={styles.contatoLabel}>Telefone</Text>
-          <Text style={styles.contatoValor}>(11) 99999-9999</Text>
+          <Text style={styles.contatoValor}>(212) 59669-6398</Text>
         </View>
       </View>
 
@@ -165,7 +165,7 @@ function ContatoScreen({ navigation }) {
         <Text style={styles.contatoIcon}>📍</Text>
         <View>
           <Text style={styles.contatoLabel}>Cidade</Text>
-          <Text style={styles.contatoValor}>Sao Paulo - SP</Text>
+          <Text style={styles.contatoValor}>New York City - NY</Text>
         </View>
       </View>
 
@@ -173,7 +173,7 @@ function ContatoScreen({ navigation }) {
         style={[styles.btnPrimary, { marginTop: 24 }]}
         onPress={() => navigation.navigate('Home')}
       >
-        <Text style={styles.btnText}>🏠  VOLTAR PARA HOME</Text>
+        <Text style={styles.btnText}>VOLTAR PARA HOME</Text>
       </TouchableOpacity>
     </ScrollView>
   );

@@ -11,7 +11,6 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const Drawer = createDrawerNavigator();
 
-// ===== CORES TEMA XBOX =====
 const COLORS = {
   background: '#0E0E0E',
   card: '#222222',
@@ -24,7 +23,6 @@ const COLORS = {
   headerBg: '#107C10',
 };
 
-// ===== TELA HOME =====
 function HomeScreen({ navigation }) {
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.center}>
@@ -52,7 +50,6 @@ function HomeScreen({ navigation }) {
   );
 }
 
-// ===== TELA SOBRE =====
 function SobreScreen() {
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.center}>
@@ -72,15 +69,13 @@ function SobreScreen() {
         <Text style={styles.cardLabel}>Descricao:</Text>
         <Text style={styles.cardValueSmall}>
           Este aplicativo foi criado como projeto pratico para demonstrar a
-          navegacao entre telas utilizando React Native e Expo, com tema
-          inspirado no universo Xbox.
+          navegacao entre telas utilizando React Native e Expo
         </Text>
       </View>
     </ScrollView>
   );
 }
 
-// ===== TELA SERVICOS =====
 function ServicosScreen() {
   const servicos = [
     { icon: '🎮', titulo: 'Game Pass Ultimate', descricao: 'Acesso a centenas de jogos por assinatura mensal.' },
@@ -112,7 +107,6 @@ function ServicosScreen() {
   );
 }
 
-// ===== TELA GALERIA =====
 function GaleriaScreen() {
   const galeria = [
     { emoji: '🏔️', legenda: 'Halo Infinite - Paisagem Epica' },
@@ -143,7 +137,6 @@ function GaleriaScreen() {
   );
 }
 
-// ===== TELA CONTATO =====
 function ContatoScreen({ navigation }) {
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.center}>
@@ -186,7 +179,6 @@ function ContatoScreen({ navigation }) {
   );
 }
 
-// ===== DRAWER CUSTOMIZADO =====
 function CustomDrawerContent(props) {
   const { navigation, state } = props;
   const menuItems = [
@@ -238,7 +230,6 @@ function CustomDrawerContent(props) {
   );
 }
 
-// ===== APP PRINCIPAL =====
 export default function App() {
   return (
     <NavigationContainer>
@@ -262,7 +253,6 @@ export default function App() {
   );
 }
 
-// ===== ESTILOS GLOBAIS =====
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
@@ -470,7 +460,6 @@ const styles = StyleSheet.create({
   },
 });
 
-// ===== ESTILOS DO DRAWER =====
 const drawerStyles = StyleSheet.create({
   container: {
     flex: 1,
